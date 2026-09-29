@@ -12,7 +12,8 @@
 
 ![Class Management](screenshots/class management.png)
 
-### 4. Subject Management
+### 4. Subject Manageme
+nt
 
 ![Subject Management](screenshots/subject management.png)
 
