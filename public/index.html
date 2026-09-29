@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Smart Attendance System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- LOGIN -->
+
+<div id="loginPage" class="container">
+
+    <h1>Smart Attendance System</h1>
+
+    <h2>Login</h2>
+
+    <input
+        id="email"
+        type="email"
+        placeholder="Email"
+    >
+
+    <input
+        id="password"
+        type="password"
+        placeholder="Password"
+    >
+
+    <button onclick="login()">
+        Login
+    </button>
+
+    <p id="loginMessage"></p>
+
+    <small>
+        Default Admin:<br>
+        admin@gmail.com / admin123
+    </small>
+
+</div>
+
+
+<!-- DASHBOARD -->
+
+<div id="dashboard" style="display:none">
+
+    <header>
+
+        <h1>Smart Attendance System</h1>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </header>
+
+    <div class="welcome">
+
+        <h2 id="welcome"></h2>
+
+        <p id="role"></p>
+
+    </div>
+
+
+    <!-- CLASS -->
+
+    <section>
+
+        <h2>Class Management</h2>
+
+        <input
+            id="className"
+            placeholder="Enter class name"
+        >
+
+        <button onclick="addClass()">
+            Add Class
+        </button>
+
+        <div id="classes"></div>
+
+    </section>
+
+
+    <!-- SUBJECT -->
+
+    <section>
+
+        <h2>Subject Management</h2>
+
+        <input
+            id="subjectName"
+            placeholder="Subject name"
+        >
+
+        <select id="subjectClass"></select>
+
+        <button onclick="addSubject()">
+            Add Subject
+        </button>
+
+        <div id="subjects"></div>
+
+    </section>
+
+
+    <!-- STUDENT -->
+
+    <section>
+
+        <h2>Student Management</h2>
+
+        <input
+            id="studentName"
+            placeholder="Student name"
+        >
+
+        <input
+            id="registerNo"
+            placeholder="Register number"
+        >
+
+        <select id="studentClass"></select>
+
+        <button onclick="addStudent()">
+            Add Student
+        </button>
+
+        <div id="students"></div>
+
+    </section>
+
+
+    <!-- ATTENDANCE -->
+
+    <section>
+
+        <h2>Mark Attendance</h2>
+
+        <select id="attendanceStudent"></select>
+
+        <select id="attendanceSubject"></select>
+
+        <input
+            id="attendanceDate"
+            type="date"
+        >
+
+        <select id="attendanceStatus">
+
+            <option value="Present">
+                Present
+            </option>
+
+            <option value="Absent">
+                Absent
+            </option>
+
+        </select>
+
+        <button onclick="markAttendance()">
+            Mark Attendance
+        </button>
+
+    </section>
+
+
+    <!-- REPORT -->
+
+    <section>
+
+        <h2>Attendance Report</h2>
+
+        <button onclick="loadReport()">
+            Refresh Report
+        </button>
+
+        <div id="report"></div>
+
+    </section>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
