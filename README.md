@@ -2,7 +2,7 @@
 
 ### 1. Login Page
 
-![Logins Page](screenshots/Logins.png)
+![Login Page](screenshots/Logins.png)
 
 ### 2. Dashboard
 
